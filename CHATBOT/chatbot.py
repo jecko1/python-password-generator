@@ -22,7 +22,7 @@ def print_created_passwords(filename):
         print("\n")
 
 
-def create_letters():
+def create_user_pass():
     pas_gen = string.digits + string.punctuation + string.ascii_letters
     date_created = datetime.date
     pass_create = "".join(choice(pas_gen) for pass_gen in range(randint(8, 13)))
